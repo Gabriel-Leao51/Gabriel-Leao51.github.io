@@ -1,0 +1,151 @@
+/* Estilos para a barra de navegação */
+nav {
+  background: linear-gradient(
+    to right,
+    var(--background-color),
+    var(--secondary-background-color)
+  );
+  height: 100vh;
+  width: var(--nav-width); /* Largura inicial da barra */
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  transition: width 0.3s ease-in-out; /* Adiciona transição para a largura */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav li {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para os links */
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%; /* Garante que os links ocupem toda a largura da barra */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  padding-left: 15px; /* Valor inicial para o padding-left */
+}
+
+/* Estilos para os ícones */
+nav a i {
+  width: 30px; /* Largura fixa para os ícones */
+  text-align: center;
+}
+
+/* Esconde o texto por padrão */
+nav li a span {
+  display: none;
+  font-size: 16px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+/* Exibe o texto no hover */
+nav:hover li a span {
+  display: inline; /* Mostra o texto como um elemento inline */
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  padding-left: 30px;
+}
+
+nav:hover {
+  width: 200px; /* Largura expandida da navbar */
+}
+
+/* Modifica o espaçamento lateral do conteúdo principal quando a barra está expandida */
+nav:hover + main {
+  margin-left: 200px; /* Ajusta para a largura expandida da navbar */
+}
+
+/* Transição suave para a margem da main */
+main {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  nav {
+    background: var(--background-color);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    transition: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  nav li {
+    margin: 0;
+    height: auto;
+    flex: 1 0 auto;
+  }
+
+  nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: none;
+  }
+
+  nav a i {
+    margin-right: 0;
+    width: auto;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  nav ul li a span {
+    display: inline;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  /* Remove comportamentos de hover desnecessários */
+  nav:hover {
+    width: 100%;
+  }
+
+  nav a:hover {
+    background-color: transparent;
+    padding-left: 10px;
+  }
+
+  /* Remove a transição da main em telas pequenas */
+  main {
+    transition: none;
+  }
+
+  /* Garante que a margem da main não seja alterada */
+  nav:hover + main {
+    margin: 20px;
+  }
+}

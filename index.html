@@ -4,33 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Leão - Desenvolvedor Web Full-Stack</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="#hero"><i class="fas fa-home"></i> Início</a>
-        </li>
-        <li>
-          <a href="#about"><i class="fas fa-user"></i> Sobre</a>
-        </li>
-        <li>
-          <a href="#skills"><i class="fas fa-code"></i> Habilidades</a>
-        </li>
-        <li>
-          <a href="#projects"><i class="fas fa-folder-open"></i> Projetos</a>
-        </li>
-        <li>
-          <a href="#contact"><i class="fas fa-envelope"></i> Contato</a>
-        </li>
-      </ul>
-    </nav>
-
     <main>
       <section id="hero">
         <div class="container">
@@ -60,7 +41,7 @@
           <div class="about-content">
             <img
               src="https://media.licdn.com/dms/image/v2/D4D03AQFYQHi8TqCYQQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731875670590?e=1741219200&v=beta&t=k6B4x5itQzNC07f-N-uIactiikWUxbhAKC9LVqSNr-g"
-              alt="Gabriel Leão"
+              alt="Sua Foto"
               class="profile-pic"
             />
             <p>
@@ -110,7 +91,7 @@
               <span>MongoDB</span>
             </div>
             <div class="skill">
-              <img src="typescript-icon.svg" alt="TypeScript" />
+              <img src="assets/typescript-icon.svg" alt="TypeScript" />
               <span>TypeScript</span>
             </div>
           </div>
@@ -121,7 +102,10 @@
         <div class="container">
           <h2>Projetos</h2>
           <div class="project-card">
-            <img src="keystone-home.webp" alt="Keystone English Homepage" />
+            <img
+              src="assets/keystone-home.webp"
+              alt="Keystone English Homepage"
+            />
             <h3>Keystone English</h3>
             <p>
               Site para escola de inglês com divulgação de cursos, blog dinâmico
@@ -172,6 +156,7 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/loadNav.js"></script>
   </body>
 </html>
