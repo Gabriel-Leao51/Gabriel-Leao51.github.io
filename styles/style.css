@@ -263,8 +263,9 @@ main {
 @media (max-width: 768px) {
   /* Conteúdo Principal */
   main {
-    margin: 40px 20px; /* Adiciona margem superior para compensar a navbar fixa (ajuste conforme necessário) */
-    padding: 10px; /* Reduz o padding */
+    margin: 0px 20px; /* Adiciona margem superior para compensar a navbar fixa (ajuste conforme necessário) */
+    margin-bottom: 80px;
+    padding: 0 10px; /* Reduz o padding */
   }
 
   .container {
