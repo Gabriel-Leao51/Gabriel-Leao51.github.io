@@ -15,16 +15,24 @@
 }
 
 /* Estilos gerais */
+.background-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/assets/background-image.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1; /* Garante que o fundo fique atrás do conteúdo */
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
   line-height: 1.6;
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/assets/background-image.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: transparent;
 }
 
 /* Conteúdo principal */
