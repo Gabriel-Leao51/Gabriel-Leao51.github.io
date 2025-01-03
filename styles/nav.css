@@ -1,4 +1,10 @@
 /* Estilos para a barra de navegação */
+#navbar-placeholder {
+  height: 100vh;
+  width: var(--nav-width); /* Largura inicial da barra */
+  position: fixed;
+}
+
 nav {
   background: linear-gradient(
     to right,

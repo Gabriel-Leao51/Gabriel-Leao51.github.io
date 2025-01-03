@@ -4,7 +4,10 @@ function loadNavigation() {
     .then((data) => {
       const navContainer = document.createElement("div");
       navContainer.innerHTML = data;
-      document.body.prepend(navContainer.firstChild); // Insere o nav no início do body
+      const navbarPlaceholder = document.getElementById("navbar-placeholder");
+      if (navbarPlaceholder) {
+        navbarPlaceholder.appendChild(navContainer.firstChild); // Append to the placeholder
+      }
     });
 }
 
