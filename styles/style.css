@@ -270,6 +270,12 @@ main {
 /* Media Query para Tablets e Smartphones */
 @media (max-width: 768px) {
   /* Conteúdo Principal */
+
+  .background-fixed {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("/assets/background-image-mobile.webp");
+  }
+
   main {
     margin: 0px 20px; /* Adiciona margem superior para compensar a navbar fixa (ajuste conforme necessário) */
     margin-bottom: 80px;
