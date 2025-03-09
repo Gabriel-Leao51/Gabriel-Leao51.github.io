@@ -1,4 +1,4 @@
-const text = "Desenvolvedor Web Full Stack";
+const text = "Analista de Qualidade de Software (QA)";
 const typingText = document.getElementById("typing-text");
 let index = 0;
 

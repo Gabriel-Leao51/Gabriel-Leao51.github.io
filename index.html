@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel Leão - Desenvolvedor Web Full Stack</title>
+    <title>Gabriel Leão - Analista de Qualidade de Software (QA)</title>
     <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/index/hero.css" />
+    <link rel="stylesheet" href="styles/index/about.css" />
+    <link rel="stylesheet" href="styles/index/skills.css" />
+    <link rel="stylesheet" href="styles/index/projects.css" />
+    <link rel="stylesheet" href="styles/index/contact.css" />
+    <link rel="stylesheet" href="styles/index/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -20,10 +28,12 @@
           <h1>Gabriel Leão</h1>
           <h2 id="typing-text"></h2>
           <p>
-            Apaixonado por criar interfaces intuitivas e funcionais. Transformo
-            ideias em realidade com TypeScript, Angular e Node.js.
+            Apaixonado por garantir a qualidade e a melhor experiência do
+            usuário em softwares. Focado em testes manuais e buscando evoluir
+            para automação.
           </p>
-          <a href="#contact" class="contact-button">Entre em Contato</a>
+          <a href="#projects" class="contact-button">Ver Projetos</a>
+
           <div class="social-icons">
             <a
               href="https://www.linkedin.com/in/gabriel-le%C3%A3o-668973243/"
@@ -42,19 +52,22 @@
           <h2>Sobre Mim</h2>
           <div class="about-content">
             <img
-              src="https://media.licdn.com/dms/image/v2/D4D03AQFYQHi8TqCYQQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731875670590?e=1741219200&v=beta&t=k6B4x5itQzNC07f-N-uIactiikWUxbhAKC9LVqSNr-g"
+              src="https://media.licdn.com/dms/image/v2/D4D03AQFYQHi8TqCYQQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731875670612?e=1746662400&v=beta&t=iD-WdwGtYw7RAbFBLqM54UtFC1ZY8o77LgU9RHHFbPc"
               alt="Sua Foto"
               class="profile-pic"
             />
             <p>
-              Estudante do último semestre de Sistemas de Informação e
-              entusiasta de desenvolvimento web full-stack. Apaixonado por criar
-              interfaces intuitivas e funcionais, domino tecnologias como
-              TypeScript, HTML, CSS, Angular e Node.js. Experiência com bancos
-              de dados NoSQL (MongoDB) e metodologias ágeis com Git. Busco
-              oportunidades para aplicar minhas habilidades em equipes
-              colaborativas, contribuir com soluções inovadoras e continuar
-              aprendendo no dinâmico campo da tecnologia.
+              Futuro profissional de Qualidade de Software (QA), graduando em
+              Sistemas de Informação. Tenho paixão por assegurar a entrega de
+              produtos de software com alta qualidade e foco na experiência do
+              usuário. Possuo experiência prática em testes manuais, abrangendo
+              desde o planejamento e design de testes até a execução, reporte de
+              bugs e análise de resultados. Estou em busca de oportunidades para
+              iniciar minha carreira em QA, aplicar meus conhecimentos e
+              continuar aprendendo, com especial interesse em automação de
+              testes. Meu conhecimento em desenvolvimento web full-stack
+              (TypeScript, Angular, Node.js) complementa meu perfil, oferecendo
+              uma compreensão abrangente do desenvolvimento de software.
             </p>
           </div>
         </div>
@@ -62,37 +75,118 @@
 
       <section id="skills">
         <div class="container">
-          <h2>Habilidades</h2>
+          <h2>Habilidades em QA</h2>
+          <!-- Título focado em QA -->
           <div class="skills-grid">
             <div class="skill">
+              <i class="fas fa-check-square"></i>
+              <!-- Ícone para Teste Manual -->
+              <span>Testes Manuais</span>
+            </div>
+            <div class="skill">
+              <i class="fas fa-bug"></i>
+              <!-- Ícone para Reporte de Bugs -->
+              <span>Reporte de Bugs</span>
+            </div>
+            <div class="skill">
+              <i class="fas fa-clipboard-check"></i>
+              <!-- Ícone para Casos de Teste -->
+              <span>Criação de Casos de Teste</span>
+            </div>
+            <div class="skill">
+              <i class="fas fa-file-alt"></i>
+              <!-- Ícone para Plano de Testes -->
+              <span>Plano de Testes</span>
+            </div>
+            <div class="skill">
+              <i class="fas fa-chart-bar"></i>
+              <!-- Ícone para Relatórios de Teste -->
+              <span>Relatórios de Teste</span>
+            </div>
+            <div class="skill">
+              <i class="fas fa-search-plus"></i>
+              <!-- Ícone para Teste Exploratório -->
+              <span>Testes Exploratórios</span>
+            </div>
+            <div class="skill">
+              <i class="fas fa-undo-alt"></i>
+              <!-- Ícone para Teste de Regressão -->
+              <span>Testes de Regressão</span>
+            </div>
+            <div class="skill">
+              <i class="fas fa-comments"></i>
+              <!-- Ícone para Comunicação -->
+              <span>Comunicação Eficaz</span>
+            </div>
+            <div class="skill" style="opacity: 0.6; filter: grayscale(80%)">
+              <!-- Habilidade futura - Automação (cinza inicialmente) -->
+              <i class="fas fa-robot"></i>
+              <!-- Ícone para Automação -->
+              <span>Automação de Testes (Em Aprendizado)</span>
+            </div>
+            <div class="skill" style="opacity: 0.6; filter: grayscale(80%)">
+              <!-- Habilidade futura - Selenium (cinza inicialmente) -->
+              <img
+                src="assets/selenium-icon2.svg"
+                alt="Selenium"
+                style="filter: grayscale(80%)"
+              />
+              <!-- Icone Selenium -->
+              <span>Selenium WebDriver (Em Aprendizado)</span>
+            </div>
+            <div class="skill" style="opacity: 0.6; filter: grayscale(80%)">
+              <!-- Habilidade futura - Python (cinza inicialmente) -->
+              <i class="fab fa-python" style="filter: grayscale(80%)"></i>
+              <!-- Icone Python -->
+              <span>Python (Em Aprendizado)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="web-dev-skills">
+        <div class="container">
+          <h2>Habilidades Web (Background)</h2>
+          <!-- Título da nova seção -->
+          <div class="skills-row">
+            <!-- Nova div para a fileira de habilidades web -->
+            <div class="skill skill-small">
+              <!-- Adicionando classe skill-small -->
               <i class="fab fa-html5"></i>
               <span>HTML</span>
             </div>
-            <div class="skill">
+            <div class="skill skill-small">
+              <!-- Adicionando classe skill-small -->
               <i class="fab fa-css3-alt"></i>
               <span>CSS</span>
             </div>
-            <div class="skill">
+            <div class="skill skill-small">
+              <!-- Adicionando classe skill-small -->
               <i class="fab fa-js"></i>
               <span>JavaScript</span>
             </div>
-            <div class="skill">
+            <div class="skill skill-small">
+              <!-- Adicionando classe skill-small -->
               <i class="fab fa-angular"></i>
               <span>Angular</span>
             </div>
-            <div class="skill">
+            <div class="skill skill-small">
+              <!-- Adicionando classe skill-small -->
               <i class="fab fa-node-js"></i>
               <span>Node.js</span>
             </div>
-            <div class="skill">
+            <div class="skill skill-small">
+              <!-- Adicionando classe skill-small -->
               <i class="fab fa-git-alt"></i>
               <span>Git</span>
             </div>
-            <div class="skill">
+            <div class="skill skill-small">
+              <!-- Adicionando classe skill-small -->
               <i class="fab fa-envira"></i>
               <span>MongoDB</span>
             </div>
-            <div class="skill">
+            <div class="skill skill-small">
+              <!-- Adicionando classe skill-small -->
               <img src="assets/typescript-icon.svg" alt="TypeScript" />
               <span>TypeScript</span>
             </div>
@@ -102,32 +196,127 @@
 
       <section id="projects">
         <div class="container">
-          <h2>Projetos</h2>
+          <h2>Projetos de QA</h2>
+          <!-- Título da seção de Projetos de QA -->
+
           <div class="project-card">
-            <img
-              src="assets/keystone-home.webp"
-              alt="Keystone English Homepage"
-            />
-            <h3>Keystone English</h3>
+            <img src="assets/wde.webp" alt="Imagem do Projeto WDE Shop" />
+            <!-- Placeholder para imagem do projeto -->
+            <h3>Teste Manual Funcional de E-commerce "WDE Shop"</h3>
+            <!-- Título do Projeto QA -->
             <p>
-              Site para escola de inglês com divulgação de cursos, blog dinâmico
-              e formulário de contato inteligente.
+              Projeto de teste manual funcional realizado no e-commerce "WDE
+              Shop", focando nas funcionalidades essenciais do fluxo de compra
+              do cliente: carrinho de compras, checkout (incluindo integração
+              com Stripe em modo teste), login e logout de usuários.
             </p>
-            <p>
-              Tecnologias: Angular, TypeScript, Node.js, Express, MongoDB,
-              Google Maps API, Cloudinary, Nodemailer
-            </p>
+
+            <div class="project-deliverables">
+              <h4>Entregas do Projeto:</h4>
+              <div class="deliverables-grid">
+                <div class="deliverable-card">
+                  <i class="fas fa-file-alt"></i>
+                  <!-- Ícone para Plano de Testes - Font Awesome (Exemplo) -->
+                  <span>Plano de Testes Detalhado</span>
+                  <a href="assets/plano-de-testes-wde-shop.pdf" target="_blank"
+                    >(PDF)</a
+                  >
+                </div>
+                <div class="deliverable-card">
+                  <i class="fas fa-file-alt"></i>
+                  <!-- Ícone para Relatório de Resultados - Font Awesome (Exemplo) -->
+                  <span>Relatório de Resultados de Teste</span>
+                  <a
+                    href="assets/relatorio-resultados-teste-wde-shop.pdf"
+                    target="_blank"
+                    >(PDF)</a
+                  >
+                </div>
+                <div class="deliverable-card">
+                  <i class="fas fa-list-alt"></i>
+                  <!-- Ícone para Casos de Teste - Font Awesome (Exemplo) -->
+                  <span>Exemplos de Casos de Teste</span>
+                  <a
+                    href="assets/exemplos-casos-de-teste-wde-shop.pdf"
+                    target="_blank"
+                    >(PDF)</a
+                  >
+                </div>
+                <div class="deliverable-card">
+                  <i class="fas fa-bug"></i>
+                  <!-- Ícone para Relatórios de Bug - Font Awesome (Exemplo) -->
+                  <span>Exemplos de Relatórios de Bug</span>
+                  <a
+                    href="assets/exemplos-relatorios-de-bug-wde-shop.pdf"
+                    target="_blank"
+                    >(PDF)</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-skills-demonstrated">
+              <h4>Principais Habilidades Demonstradas:</h4>
+              <div class="skills-demonstrated-grid">
+                <div class="skill-demonstrated-card">
+                  <i class="fas fa-clipboard-check"></i>
+                  <!-- Ícone para Planejamento - Font Awesome (Exemplo) -->
+                  <span>Planejamento e Design de Testes Manuais</span>
+                </div>
+                <div class="skill-demonstrated-card">
+                  <i class="fas fa-tasks"></i>
+                  <!-- Ícone para Execução de Testes - Font Awesome (Exemplo) -->
+                  <span>Criação e Execução de Casos de Teste Funcionais</span>
+                </div>
+                <div class="skill-demonstrated-card">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <!-- Ícone para Reporte de Bugs - Font Awesome (Exemplo) -->
+                  <span>Identificação e Reporte de Defeitos (Bugs)</span>
+                </div>
+                <div class="skill-demonstrated-card">
+                  <i class="fas fa-chart-bar"></i>
+                  <!-- Ícone para Análise de Resultados - Font Awesome (Exemplo) -->
+                  <span
+                    >Análise de Resultados de Teste e Elaboração de
+                    Relatórios</span
+                  >
+                </div>
+                <div class="skill-demonstrated-card">
+                  <i class="fas fa-user-check"></i>
+                  <!-- Ícone para Foco no Usuário - Font Awesome (Exemplo) -->
+                  <span
+                    >Foco na Experiência do Usuário e Qualidade do
+                    Software</span
+                  >
+                </div>
+              </div>
+            </div>
+
             <div class="project-links">
-              <a
-                href="https://keystone-english-frontend.onrender.com"
-                target="_blank"
-                class="project-button"
-                >Ver Projeto</a
-              >
-              <a href="case-study.html" class="project-button"
-                >Ver Case Study</a
+              <a href="/projeto-wde-shop.html" class="project-button"
+                >Ver Detalhes</a
               >
             </div>
+          </div>
+
+          <!-- Espaço reservado para futuros Projetos de Automação -->
+          <div
+            class="project-card"
+            id="automation-project"
+            style="
+              opacity: 0.6;
+              filter: grayscale(80%);
+              border: 1px dashed #ccc;
+              padding: 15px;
+              text-align: center;
+            "
+          >
+            <h3>Projeto de Automação de Testes (Em Breve)</h3>
+            <p>
+              Em breve, demonstrarei minhas habilidades em automação de testes
+              com um novo projeto. Aguarde!
+            </p>
+            <!-- Espaço para adicionar detalhes do projeto de automação quando estiver pronto -->
           </div>
         </div>
       </section>
@@ -136,8 +325,8 @@
         <div class="container">
           <h2>Contato</h2>
           <p>
-            Vamos conversar! Entre em contato comigo por e-mail ou me encontre
-            nas redes sociais:
+            Vamos conversar sobre qualidade de software! Entre em contato comigo
+            por e-mail ou me encontre nas redes sociais:
           </p>
           <p>
             <a href="mailto:gabriel.souza.leao51@gmail.com"

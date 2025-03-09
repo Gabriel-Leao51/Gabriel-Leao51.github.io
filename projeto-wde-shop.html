@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Detalhes do Projeto de Teste QA: E-commerce WDE Shop | Gabriel Leão
+    </title>
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link
+      rel="stylesheet"
+      href="styles/projeto-detalhes/projeto-detalhes.css"
+    />
+    <link rel="stylesheet" href="styles/projeto-detalhes/overview-card.css" />
+    <link rel="stylesheet" href="styles/projeto-detalhes/objectives-card.css" />
+    <link
+      rel="stylesheet"
+      href="styles/projeto-detalhes/methodology-card.css"
+    />
+    <link rel="stylesheet" href="styles/projeto-detalhes/results-card.css" />
+    <link rel="stylesheet" href="styles/projeto-detalhes/conclusion-card.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="background-fixed"></div>
+    <div id="navbar-placeholder"></div>
+    <main id="projeto-detalhes-page">
+      <section id="case-study">
+        <div class="container">
+          <h1>
+            Detalhes do Projeto de Teste Manual Funcional - E-commerce WDE Shop
+          </h1>
+
+          <div class="card-container">
+            <div class="card overview">
+              <!-- <div class="card-image">
+                <img
+                  src="assets/visao-geral.webp"
+                  alt="Visão geral do projeto de teste"
+                />
+              </div> -->
+              <div class="card-content">
+                <h2>
+                  <i class="fas fa-eye"></i> Visão Geral do Projeto de Teste de
+                  QA - E-commerce WDE Shop
+                </h2>
+                <p>
+                  Este projeto de teste manual funcional foi realizado no
+                  e-commerce "WDE Shop", um site de demonstração com
+                  funcionalidades essenciais de compra online. O objetivo
+                  principal foi validar as funcionalidades cruciais do fluxo de
+                  compra do cliente, garantindo a qualidade, usabilidade e a
+                  ausência de defeitos críticos que pudessem impactar
+                  negativamente a experiência do usuário e o processo de compra.
+                  O escopo dos testes abrangeu as funcionalidades de carrinho de
+                  compras, checkout (incluindo integração com Stripe em modo de
+                  teste), login e logout de usuários. Este projeto foi
+                  desenvolvido como parte do meu portfólio pessoal, visando
+                  demonstrar minhas habilidades em Qualidade de Software (QA) e
+                  testes manuais.
+                </p>
+              </div>
+            </div>
+
+            <div class="card left">
+              <div class="card-content">
+                <h2>
+                  <i class="fas fa-bullseye"></i> Objetivos e Escopo dos Testes
+                </h2>
+                <p>
+                  O principal objetivo deste projeto de teste foi verificar e
+                  validar se as funcionalidades de carrinho de compras, checkout
+                  (incluindo pagamento com Stripe em modo de teste), login e
+                  logout da e-commerce WDE Shop operam de acordo com os
+                  requisitos esperados, são fáceis de usar para os usuários e
+                  estão livres de defeitos críticos que possam impactar a
+                  experiência do cliente e o processo de compra.
+                </p>
+                <p>
+                  Para alcançar este objetivo principal, foram definidos os
+                  seguintes objetivos específicos:
+                </p>
+                <div class="challenges-container">
+                  <div class="challenge-card">
+                    <h3>Testar o Fluxo de Adicionar Produtos ao Carrinho</h3>
+                    <ul>
+                      <li>
+                        Verificar a adição de produtos ao carrinho a partir da
+                        página de listagem.
+                      </li>
+                      <li>
+                        Testar a adição de diferentes quantidades de produtos.
+                      </li>
+                      <li>
+                        Validar se o número de itens no carrinho é atualizado
+                        corretamente ao adicionar produtos.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>
+                      Testar a Visualização e Edição do Carrinho de Compras
+                    </h3>
+                    <ul>
+                      <li>
+                        Validar a exibição correta de itens, quantidades, preços
+                        unitários, subtotal e total do carrinho.
+                      </li>
+                      <li>
+                        Testar o aumento e a diminuição da quantidade de itens
+                        no carrinho.
+                      </li>
+                      <li>Testar a remoção de itens do carrinho.</li>
+                      <li>
+                        Verificar se os totais (subtotal, total) são
+                        recalculados corretamente após edições no carrinho.
+                      </li>
+                      <li>
+                        Testar o comportamento do carrinho vazio e do carrinho
+                        com múltiplos itens.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>
+                      Testar o Processo de Checkout (Incluindo Stripe - Teste)
+                    </h3>
+                    <ul>
+                      <li>
+                        Testar o fluxo completo do processo de checkout, desde o
+                        carrinho até a finalização da compra.
+                      </li>
+                      <li>
+                        Validar a integração com o sistema de pagamento Stripe
+                        em modo de teste.
+                      </li>
+                      <li>
+                        Testar cenários de pagamento bem-sucedido (com cartões
+                        de teste para sucesso).
+                      </li>
+                      <li>
+                        Testar cenários de pagamento recusado/falha (com cartões
+                        de teste para falha).
+                      </li>
+                      <li>
+                        Verificar a exibição de mensagens de erro apropriadas
+                        para falhas de pagamento.
+                      </li>
+                      <li>
+                        Verificar o redirecionamento correto para telas de
+                        sucesso e falha de pagamento.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>Testar Login e Logout de Usuários</h3>
+                    <ul>
+                      <li>
+                        Testar o login de usuários existentes com credenciais
+                        válidas.
+                      </li>
+                      <li>
+                        Testar o login de usuários com credenciais inválidas
+                        (usuário inexistente, senha incorreta).
+                      </li>
+                      <li>Testar o logout de usuários logados.</li>
+                      <li>
+                        Verificar se o carrinho de compras é persistente entre
+                        sessões de login e logout.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>Escopo dos Testes (Resumo)</h3>
+                    <ul>
+                      <li>Funcionalidades de Carrinho de Compras</li>
+                      <li>
+                        Funcionalidades de Checkout (incluindo Stripe - Teste)
+                      </li>
+                      <li>Funcionalidades de Login e Logout de Usuários</li>
+                      <li>Testes Manuais Funcionais</li>
+                      <li>Foco na Experiência do Usuário</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card right">
+              <div class="card-content solutions">
+                <h2>
+                  <i class="fas fa-tools"></i> Metodologia e Abordagem de Teste
+                  de QA
+                </h2>
+                <p>
+                  Para garantir a qualidade e abrangência dos testes, utilizei
+                  uma abordagem estruturada de testes manuais funcionais,
+                  seguindo as melhores práticas da área de Qualidade de Software
+                  (QA). A metodologia incluiu o planejamento detalhado dos
+                  testes, a criação de casos de teste abrangentes, a execução
+                  rigorosa dos testes, o reporte claro e conciso dos bugs
+                  encontrados e a análise dos resultados para gerar um relatório
+                  completo e informativo.
+                </p>
+                <div class="solutions-container">
+                  <div class="solution-card">
+                    <h3>Plano de Testes e Casos de Teste</h3>
+                    <ul>
+                      <li>
+                        Criação de um Plano de Testes detalhado para guiar todo
+                        o processo de teste.
+                      </li>
+                      <li>
+                        Desenvolvimento de 26 Casos de Teste abrangentes,
+                        cobrindo diferentes cenários e fluxos de usuário.
+                      </li>
+                      <li>
+                        Utilização de planilhas (Excel/Google Sheets) para a
+                        organização e documentação dos casos de teste.
+                      </li>
+                      <li>
+                        Foco na clareza, objetividade e rastreabilidade dos
+                        casos de teste, facilitando a execução e o reporte.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="solution-card">
+                    <h3>Tipos de Teste Aplicados</h3>
+                    <ul>
+                      <li>
+                        Testes Funcionais: Para verificar se as funcionalidades
+                        operam conforme o esperado.
+                      </li>
+                      <li>
+                        Testes de Usabilidade (básicos): Para avaliar a
+                        facilidade de uso e a experiência do usuário.
+                      </li>
+                      <li>
+                        Testes de Segurança (autenticação/autorização básica):
+                        Para verificar aspectos básicos de segurança no login.
+                      </li>
+                      <li>
+                        Testes de Validação de Dados: Para garantir a correta
+                        validação e manipulação dos dados inseridos.
+                      </li>
+                      <li>
+                        Testes de Interface de Usuário (UI - básicos): Para
+                        verificar a exibição correta da interface.
+                      </li>
+                      <li>
+                        Testes de Performance (observacionais e básicos): Para
+                        observar o tempo de resposta e performance geral.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="solution-card">
+                    <h3>Ambiente de Teste</h3>
+                    <ul>
+                      <li>
+                        Navegadores: Google Chrome e Mozilla Firefox (versões
+                        mais recentes)
+                      </li>
+                      <li>Sistema Operacional: Windows 11</li>
+                      <li>
+                        Ambiente:
+                        <a href="https://wde-5p3f.onrender.com/" target="_blank"
+                          >Plataforma Render</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="solution-card">
+                    <h3>Ferramentas Utilizadas</h3>
+                    <ul>
+                      <li>
+                        Planilhas (Excel/Google Sheets): Para criação e
+                        organização dos Casos de Teste.
+                      </li>
+                      <li>
+                        Documentos de Texto (Google Docs): Para elaboração do
+                        Plano de Testes e Relatórios de Bug.
+                      </li>
+                      <!-- <li>Ferramentas de Bug Tracking (Opcional): Jira, Bugzilla, Redmine (Familiarização com o conceito).</li> -->
+                      <li>
+                        Navegadores Chrome e Firefox: Ferramentas de
+                        Desenvolvedor para inspeção básica e troubleshooting.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="solution-card">
+                    <h3>Entregas do Projeto de Teste</h3>
+                    <ul>
+                      <li>
+                        <a
+                          href="assets/plano-de-testes-wde-shop.pdf"
+                          target="_blank"
+                          >Plano de Testes Detalhado (PDF)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="assets/relatorio-resultados-teste-wde-shop.pdf"
+                          target="_blank"
+                          >Relatório de Resultados de Teste (PDF)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="assets/exemplos-casos-de-teste-wde-shop.pdf"
+                          target="_blank"
+                          >Exemplos de Casos de Teste (PDF)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="assets/exemplos-relatorios-de-bug-wde-shop.pdf"
+                          target="_blank"
+                          >Exemplos de Relatórios de Bug (PDF)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card left">
+              <!-- <div class="card-image">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="assets/results-mobile.webp"
+                  />
+                  <img
+                    src="assets/results.webp"
+                    alt="Resultados dos testes"
+                    loading="lazy"
+                  />
+                </picture>
+              </div> -->
+              <div class="card-content">
+                <h2>
+                  <i class="fas fa-chart-bar"></i> Principais Resultados e Bugs
+                  Encontrados
+                </h2>
+                <p>
+                  Os testes manuais funcionais realizados no e-commerce WDE Shop
+                  resultaram na execução de 26 casos de teste, com 18 casos
+                  aprovados, 1 caso aprovado com ressalvas e 7 casos falhados.
+                  Foram identificados um total de 7 bugs, abrangendo diferentes
+                  níveis de severidade, desde bugs críticos que comprometem a
+                  funcionalidade principal até bugs de usabilidade que afetam a
+                  experiência do usuário. A seguir, destacam-se alguns dos bugs
+                  mais relevantes encontrados durante o projeto:
+                </p>
+                <div class="challenges-container">
+                  <!-- Renomeado para bugs-container -->
+                  <div class="challenge-card">
+                    <!-- Mantendo challenge-card para estilo, mas pode renomear se preferir -->
+                    <h3>
+                      Falha Crítica no Checkout - Pedido Criado e Carrinho
+                      Esvaziado Prematuramente ao Abandonar o Checkout
+                    </h3>
+                    <ul>
+                      <li><strong>Severidade: Crítica</strong></li>
+                      <li>
+                        <strong>Impacto:</strong> Compromete a integridade do
+                        processo de compra, podendo levar a perda de vendas e
+                        inconsistência de pedidos.
+                      </li>
+                      <li>
+                        <strong>Recomendação:</strong> Correção Imediata e
+                        refatoração urgente da lógica de checkout.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>
+                      Falha na Persistência do Carrinho ao Trocar de Usuário -
+                      Carrinhos de Usuários Diferentes se Misturam
+                    </h3>
+                    <ul>
+                      <li><strong>Severidade: Alta</strong></li>
+                      <li>
+                        <strong>Impacto:</strong> Compromete o isolamento de
+                        dados do carrinho entre usuários, afetando a integridade
+                        da funcionalidade.
+                      </li>
+                      <li>
+                        <strong>Recomendação:</strong> Correção Rápida e revisão
+                        da lógica de gerenciamento de sessão de usuário e
+                        persistência de dados do carrinho.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>
+                      Sistema Aceita Quantidade Negativa no Carrinho e Remove
+                      Produto Inesperadamente
+                    </h3>
+                    <ul>
+                      <li><strong>Severidade: Crítica</strong></li>
+                      <li>
+                        <strong>Impacto:</strong> Possibilidade de inserir
+                        quantidades negativas prejudica a experiência do usuário
+                        e abre espaço para erros graves no gerenciamento de
+                        estoque e pedidos.
+                      </li>
+                      <li>
+                        <strong>Recomendação:</strong> Implementação urgente de
+                        validação robusta para o campo de quantidade e correção
+                        da lógica de remoção inesperada.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>
+                      Validação de formulário exibe erro apenas para o primeiro
+                      campo obrigatório vazio quando múltiplos campos estão
+                      inválidos (Problema de UX)
+                    </h3>
+                    <ul>
+                      <li><strong>Severidade: Média - UX Issue</strong></li>
+                      <li>
+                        <strong>Impacto:</strong> Experiência do usuário confusa
+                        e ineficiente ao lidar com múltiplos erros de validação.
+                      </li>
+                      <li>
+                        <strong>Recomendação:</strong> Melhorar a UX da
+                        validação de formulário para exibir mensagens de erro
+                        claras para todos os campos inválidos simultaneamente.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card right">
+              <!-- <div class="card-image">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="assets/licoes-aprendidas-mobile.webp"
+                  />
+                  <img
+                    src="assets/licoes-aprendidas.webp"
+                    alt="Conclusões e próximos passos"
+                    loading="lazy"
+                  />
+                </picture>
+              </div> -->
+              <div class="card-content">
+                <h2>
+                  <i class="fas fa-chart-line"></i> Conclusões e Próximos Passos
+                  no Projeto de Teste
+                </h2>
+                <p>
+                  O projeto de teste manual funcional no e-commerce WDE Shop foi
+                  uma experiência de aprendizado extremamente valiosa para
+                  aplicar e aprimorar minhas habilidades de Qualidade de
+                  Software (QA). Os testes realizados permitiram validar as
+                  funcionalidades essenciais do site e identificar áreas
+                  importantes de melhoria, especialmente em relação à robustez
+                  do checkout e à persistência do carrinho. A identificação dos
+                  bugs, em particular os de severidade crítica, ressalta a
+                  importância crucial do teste de software como uma etapa
+                  fundamental no ciclo de desenvolvimento para garantir a
+                  qualidade e evitar problemas graves em produção.
+                </p>
+                <p>
+                  Com base nos resultados dos testes e nos bugs reportados, as
+                  principais recomendações para os próximos passos são:
+                </p>
+                <div class="recommendations-container">
+                  <!-- Renomeado para recommendations-container -->
+                  <div class="challenge-card">
+                    <!-- Mantendo challenge-card para estilo, mas pode renomear se preferir -->
+                    <h3>
+                      Priorizar a Correção de Bugs Críticos e de Alta Severidade
+                    </h3>
+                    <ul>
+                      <li>
+                        <strong>Recomendação:</strong> Correção urgente dos bugs
+                        de severidade crítica e alta (Checkout, Persistência do
+                        Carrinho, Quantidade Negativa).
+                      </li>
+                      <li>
+                        <strong>Justificativa:</strong> Esses bugs representam
+                        riscos significativos para o negócio e a experiência do
+                        cliente.
+                      </li>
+                      <li>
+                        <strong>Ação:</strong> Alocar recursos e priorizar a
+                        correção desses bugs antes de qualquer outra atividade.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>
+                      Corrigir Bugs de Severidade Média e Baixa e Melhorar a
+                      Usabilidade
+                    </h3>
+                    <ul>
+                      <li>
+                        <strong>Recomendação:</strong> Após a correção dos bugs
+                        críticos, abordar os bugs de severidade média e baixa
+                        (Validação de Formulário, Mensagens de Erro, Carrinho
+                        Vazio).
+                      </li>
+                      <li>
+                        <strong>Justificativa:</strong> Melhorias na usabilidade
+                        e correção de bugs de menor severidade elevam a
+                        qualidade geral da aplicação e a satisfação do usuário.
+                      </li>
+                      <li>
+                        <strong>Ação:</strong> Incluir a correção desses bugs no
+                        backlog de desenvolvimento e planejar sua implementação.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>
+                      Revisar e Refatorar a Lógica de Checkout e Persistência do
+                      Carrinho
+                    </h3>
+                    <ul>
+                      <li>
+                        <strong>Recomendação:</strong> Revisar e refatorar a
+                        lógica subjacente do checkout e da persistência do
+                        carrinho.
+                      </li>
+                      <li>
+                        <strong>Justificativa:</strong> Os bugs críticos nessas
+                        áreas indicam problemas na arquitetura e implementação
+                        dessas funcionalidades.
+                      </li>
+                      <li>
+                        <strong>Ação:</strong> Realizar uma análise aprofundada
+                        do código, identificar as causas raízes dos problemas e
+                        refatorar a lógica para garantir robustez e
+                        confiabilidade.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="challenge-card">
+                    <h3>
+                      Implementar Validações Robustas em Formulários e Campos
+                      Críticos
+                    </h3>
+                    <ul>
+                      <li>
+                        <strong>Recomendação:</strong> Implementar validações
+                        robustas em todos os formulários e campos críticos da
+                        aplicação.
+                      </li>
+                      <li>
+                        <strong>Justificativa:</strong> Validações eficazes
+                        previnem a entrada de dados inválidos e garantem a
+                        integridade dos dados e do sistema.
+                      </li>
+                      <li>
+                        <strong>Ação:</strong> Revisar e implementar validações
+                        no front-end e back-end para todos os pontos de entrada
+                        de dados do usuário.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/loadNav.js"></script>
+  </body>
+</html>

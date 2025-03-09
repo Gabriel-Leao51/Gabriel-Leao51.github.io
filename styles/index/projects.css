@@ -1,0 +1,142 @@
+@import "../variables.css"; /* Importa as variáveis de cor */
+
+/* Seção Projetos */
+#projects {
+  /* background-color: var(--secondary-background-color); */
+  padding: 40px 0;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--secondary-background-color)
+  );
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+#projects ul {
+  list-style: none;
+  padding: 0 20px 20px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.project-card p {
+  padding: 0 20px 20px;
+  font-size: 16px;
+}
+
+/* Estilos para a seção de Entregas do Projeto */
+.project-deliverables,
+.project-skills-demonstrated {
+  margin-top: 20px;
+}
+
+.project-deliverables h4,
+.project-skills-demonstrated h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em; /* Ajuste o tamanho do título conforme necessário */
+  text-align: center;
+}
+
+/* Grid para as Entregas do Projeto */
+.deliverables-grid,
+.skills-demonstrated-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Grid responsivo */
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para os Cards de Entrega e Habilidade */
+.deliverable-card,
+.skill-demonstrated-card {
+  background-color: var(--background-color); /* Cor de fundo dos sub-cards */
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sutil sombra */
+  transition: transform 0.3s ease-in-out;
+}
+
+.deliverable-card:hover,
+.skill-demonstrated-card:hover {
+  transform: translateY(-3px); /* Leve elevação no hover */
+}
+
+.deliverable-card i,
+.skill-demonstrated-card i {
+  font-size: 2em; /* Tamanho dos ícones */
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  display: block; /* Para centralizar o ícone */
+}
+
+.deliverable-card span,
+.skill-demonstrated-card span {
+  display: block; /* Para o texto ficar abaixo do ícone */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.deliverable-card a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 2px 5px;
+  border-radius: 3px;
+  background-color: #3d3d3d;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.deliverable-card a:hover {
+  background-color: var(
+    --secondary-background-color
+  ); /* Cor de fundo do link PDF no hover */
+}
+
+.project-links {
+  padding: 0 20px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.project-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 10px 100px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;
+  margin: auto;
+}
+
+.project-button:hover {
+  background-color: #0056b3;
+}

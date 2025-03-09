@@ -1,0 +1,49 @@
+@import "../variables.css"; /* Importa as variáveis de cor */
+
+/* Projeto Detalhes Styles */
+
+#case-study {
+  padding: 40px 0;
+}
+
+#case-study .container {
+  max-width: 1200px;
+}
+
+#case-study h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#case-study a {
+  color: var(--text-color);
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+#case-study a:hover {
+  color: var(--accent-color);
+}
+
+.objetivos-container, /* Renomeado de .challenges-container */
+  .metodologia-container, /* Renomeado de .solutions-container */
+  .recommendations-container, /* Mantendo para a seção de recomendações */
+  .bugs-container /* Mantendo para a seção de bugs */ {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  justify-content: center; /* Centraliza o grid horizontalmente */
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: auto;
+    margin-bottom: 80px;
+  }
+}

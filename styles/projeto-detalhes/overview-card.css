@@ -1,0 +1,64 @@
+@import "../variables.css"; /* Importa as variáveis de cor */
+
+/* Estilos específicos para o card de Visão Geral - Inspirado em #projects e .project-card */
+
+.card.overview {
+  background: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--secondary-background-color)
+  );
+  border-radius: 10px; /* Mantendo o border-radius original do card, pode ajustar se quiser 5px */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Mantendo o box-shadow original do card, pode ajustar se quiser similar ao .project-card */
+}
+
+.card.overview .card-image img {
+  width: 100%;
+  height: 380px; /* Altura fixa para a imagem, ajuste se necessário */
+  object-fit: contain;
+}
+
+.card.overview .card-content {
+  width: 100%; /* Mantendo largura original do conteúdo, ajuste se necessário */
+  padding: 20px; /* Reduzindo o padding para alinhar com o estilo project-card */
+}
+
+.card.overview .card-content h2 {
+  padding: 20px 0; /* Adicionando padding vertical para o título */
+  font-size: 20px; /* Tamanho da fonte similar ao .project-card h3 */
+  margin-bottom: 0; /* Removendo a margem inferior padrão do h2 para controlar o espaçamento com padding */
+}
+
+.card.overview .card-content p {
+  padding: 0 0 20px; /* Adicionando padding inferior para o parágrafo */
+  font-size: 16px; /* Tamanho da fonte similar ao .project-card p */
+  text-align: justify; /* Mantendo o alinhamento justificado */
+}
+
+@media (max-width: 768px) {
+  .card.overview {
+    border-radius: 8px; /* Reduzindo um pouco o border-radius em telas menores */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduzindo um pouco o box-shadow em telas menores */
+  }
+
+  .card.overview .card-image img {
+    height: auto; /* Altura automática para a imagem se ajustar ao conteúdo */
+    max-height: 250px; /* Definindo uma altura máxima para a imagem em telas menores */
+  }
+
+  .card.overview .card-content {
+    width: 100%; /* Conteúdo ocupa toda a largura em telas menores */
+    padding: 15px; /* Reduzindo o padding do conteúdo em telas menores */
+  }
+
+  .card.overview .card-content h2 {
+    font-size: 18px; /* Reduzindo o tamanho da fonte do título em telas menores */
+    padding: 15px 0; /* Reduzindo o padding vertical do título em telas menores */
+  }
+
+  .card.overview .card-content p {
+    font-size: 14px; /* Reduzindo o tamanho da fonte do parágrafo em telas menores */
+    padding: 0 0 15px; /* Reduzindo o padding inferior do parágrafo em telas menores */
+  }
+}

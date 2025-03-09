@@ -1,0 +1,8 @@
+/* Variáveis de cor */
+:root {
+  --background-color: rgb(24, 24, 24, 0.8);
+  --secondary-background-color: rgb(34, 34, 34, 0.6);
+  --text-color: #fff;
+  --accent-color: #0064cf;
+  --nav-width: 60px; /* Largura da barra de navegação */
+}

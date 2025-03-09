@@ -1,0 +1,88 @@
+@import "../variables.css"; /* Importa as variáveis de cor */
+
+/* Estilos específicos para o card de Metodologia - Mais Dinâmico */
+.metodologia-container {
+  /* Renomeado de .solutions-container no projeto-detalhes.css */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Mais responsivo com auto-fit */
+  gap: 30px; /* Aumentando um pouco o gap para mais espaço entre os cards */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: stretch; /* Cards com a mesma altura */
+}
+
+.solution-card {
+  /* Mantendo .solution-card para os cards de metodologia */
+  margin-top: 10px;
+  background-color: var(
+    --secondary-background-color
+  ); /* Alterando para cor secundária para destacar mais */
+  border-radius: 12px; /* Aumentando um pouco o border-radius */
+  padding: 25px; /* Aumentando um pouco o padding interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aumentando e suavizando o box-shadow */
+}
+
+.solution-card h3 {
+  /* Mantendo .solution-card h3 */
+  margin-bottom: 15px; /* Aumentando um pouco a margem inferior */
+  color: var(
+    --text-color- акцент
+  ); /* Cor do texto padrão, não o accent color para o título se destacar no card secundário */
+  font-size: 22px; /* Aumentando um pouco o tamanho da fonte do título */
+  font-weight: 600; /* Deixando o título um pouco mais bold */
+  border-bottom: 2px solid var(--accent-color); /* Adicionando uma linha abaixo do título com a cor de destaque */
+  padding-bottom: 8px; /* Espaçamento entre o título e a linha */
+}
+
+.solution-card ul {
+  list-style-type: disc; /* Adicionando bullet points padrão (disc) */
+  padding-left: 25px; /* Indentando a lista */
+}
+
+.solution-card ul li {
+  margin-bottom: 8px; /* Espaçamento entre os itens da lista */
+  line-height: 1.5; /* Melhorando o espaçamento entre linhas na lista */
+}
+
+/* Media Query específica para a seção de Metodologia (Ajustes Responsivos) */
+@media (max-width: 768px) {
+  .metodologia-container {
+    /* Renomeado de .solutions-container no projeto-detalhes-responsive.css */
+    grid-template-columns: 1fr; /* Layout de 1 coluna em telas menores */
+    gap: 20px; /* Reduzindo o gap em telas menores */
+  }
+
+  .solution-card {
+    /* Mantendo .solution-card, pode renomear se preferir */
+    padding: 20px; /* Reduzindo o padding em telas menores */
+    border-radius: 10px; /* Reduzindo o border-radius em telas menores */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Reduzindo o box-shadow em telas menores */
+  }
+
+  .solution-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Reduzindo o box-shadow no hover em telas menores */
+    transform: translateY(
+      -2px
+    ); /* Reduzindo o efeito de "levantar" no hover em telas menores */
+  }
+
+  .solution-card h3 {
+    /* Mantendo .solution-card h3, pode renomear se preferir */
+    font-size: 18px; /* Reduzindo o tamanho da fonte do título em telas menores */
+    margin-bottom: 10px; /* Reduzindo a margem inferior em telas menores */
+    padding-bottom: 5px; /* Reduzindo padding bottom da linha em telas menores */
+    border-bottom-width: 1.5px; /* Reduzindo a espessura da linha em telas menores */
+  }
+
+  .solution-card ul {
+    padding-left: 20px; /* Reduzindo o padding left da lista em telas menores */
+  }
+
+  .solution-card ul li {
+    font-size: 15px; /* Reduzindo o tamanho da fonte dos itens da lista em telas menores */
+    margin-bottom: 6px; /* Reduzindo o espaçamento entre os itens da lista em telas menores */
+    line-height: 1.4; /* Ajustando o line-height em telas menores */
+  }
+}

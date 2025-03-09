@@ -1,0 +1,232 @@
+@import "../variables.css"; /* Importa as variáveis de cor (se as variáveis responsivas estiverem aqui) */
+
+/* Media Query para Tablets e Smartphones */
+@media (max-width: 768px) {
+  /* Conteúdo Principal */
+
+  .background-fixed {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("/assets/background-image-mobile.webp");
+  }
+
+  main {
+    margin: 10px; /* Adiciona margem superior para compensar a navbar fixa (ajuste conforme necessário) */
+    margin-bottom: 80px;
+    padding: 0 10px; /* Reduz o padding */
+  }
+
+  .container {
+    padding: 0 10px; /* Reduz o padding */
+  }
+
+  /* Seção Hero */
+  #hero {
+    height: auto; /* Altura automática */
+    padding: 20px 0;
+  }
+
+  #hero h1 {
+    font-size: 36px; /* Reduz o tamanho da fonte */
+  }
+
+  #hero h2 {
+    font-size: 20px; /* Reduz o tamanho da fonte */
+  }
+
+  #hero p {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+  }
+
+  /* Botão de Contato */
+  .contact-button {
+    padding: 8px 16px; /* Reduz o padding */
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  /* Ícones Sociais */
+  .social-icons a {
+    font-size: 20px; /* Reduz o tamanho da fonte */
+    margin: 0 8px; /* Reduz o espaçamento */
+  }
+
+  /* Seção Sobre */
+  #about {
+    padding: 20px 0; /* Reduz o padding */
+  }
+
+  #about h2 {
+    margin-bottom: 20px; /* Reduz a margem */
+  }
+
+  .about-content {
+    flex-direction: column; /* Altera para layout vertical */
+    gap: 20px; /* Reduz o espaçamento */
+  }
+
+  .profile-pic {
+    width: 100px; /* Reduz o tamanho da imagem */
+    height: 100px; /* Reduz o tamanho da imagem */
+  }
+
+  #about p {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  /* Seção Habilidades */
+  #skills {
+    padding: 20px 0; /* Reduz o padding */
+  }
+
+  #skills h2 {
+    margin-bottom: 20px; /* Reduz a margem */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* Altera para 2 colunas */
+    gap: 10px; /* Reduz o espaçamento */
+  }
+
+  .skill {
+    padding: 10px; /* Reduz o padding */
+  }
+
+  .skill i {
+    font-size: 36px; /* Reduz o tamanho do ícone */
+    margin-bottom: 5px; /* Reduz a margem */
+  }
+
+  .skill img {
+    height: 36px; /* Reduz o tamanho da imagem */
+  }
+
+  .skill span {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  #web-dev-skills {
+    padding: 10px 0; /* Reduz ainda mais o padding em mobile */
+  }
+
+  #web-dev-skills h2 {
+    margin-bottom: 10px; /* Reduz ainda mais a margem em mobile */
+    font-size: 1.1em; /* Reduz ainda mais o tamanho da fonte do título em mobile */
+  }
+
+  .skills-row {
+    gap: 8px; /* Reduz ainda mais o espaçamento em mobile */
+  }
+
+  .skill-small {
+    padding: 8px; /* Reduz ainda mais o padding em mobile */
+    width: 60px; /* Largura ainda menor em mobile */
+    height: 60px; /* Altura ainda menor em mobile */
+  }
+
+  .skill-small i {
+    font-size: 24px; /* Reduz ainda mais o tamanho do ícone em mobile */
+    margin-bottom: 3px; /* Reduz ainda mais a margem em mobile */
+  }
+
+  .skill-small img {
+    height: 24px; /* Reduz ainda mais a altura para ícones SVG em mobile */
+  }
+
+  .skill-small span {
+    font-size: 11px; /* Reduz ainda mais o tamanho do texto em mobile */
+  }
+
+  /* Seção Projetos */
+  #projects {
+    padding: 20px 0; /* Reduz o padding */
+  }
+
+  #projects h2 {
+    margin-bottom: 20px; /* Reduz a margem */
+  }
+
+  .project-card {
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    padding: 10px;
+  }
+
+  .project-card img {
+    height: auto; /* Altura automática para manter a proporção */
+  }
+
+  .project-card h3 {
+    padding: 10px; /* Reduz o padding */
+    font-size: 18px; /* Reduz o tamanho da fonte */
+    margin-bottom: 5px; /* Reduz a margem */
+  }
+
+  .project-card p {
+    padding: 0 10px 10px; /* Reduz o padding */
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  .project-links {
+    padding: 0 10px 10px; /* Reduz o padding */
+    flex-direction: column; /* Altera para layout vertical */
+    gap: 5px; /* Reduz o espaçamento */
+  }
+
+  .deliverables-grid,
+  .skills-demonstrated-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(120px, 1fr)
+    ); /* Menor largura mínima em mobile */
+    gap: 15px; /* Menor espaçamento em mobile */
+  }
+
+  .deliverable-card,
+  .skill-demonstrated-card {
+    padding: 10px; /* Menor padding em mobile */
+  }
+
+  .deliverable-card i,
+  .skill-demonstrated-card i {
+    font-size: 1.3em; /* Reduzi o tamanho do ícone para 1.5em (antes estava 1.5em, podemos reduzir mais ainda) */
+    margin-bottom: 5px; /* Menor margem em mobile */
+  }
+
+  .deliverable-card span,
+  .skill-demonstrated-card span {
+    font-size: 0.9em; /* Reduzi o tamanho da fonte para 0.9em (antes estava 0.9em, podemos reduzir mais ainda) */
+    margin-bottom: 3px; /* Menor margem em mobile */
+  }
+
+  .deliverable-card a {
+    font-size: 0.8em; /* Menor tamanho do link PDF em mobile */
+    padding: 4px 8px; /* Menor padding do link PDF em mobile */
+  }
+
+  /* **Novos Ajustes para Ícones e Fontes MENORES em Mobile:** */
+
+  .project-button {
+    padding: 8px 16px; /* Reduz o padding */
+    font-size: 14px; /* Reduz o tamanho da fonte */
+    margin-right: 0; /* Remove a margem direita */
+    margin-bottom: 5px; /* Adiciona margem inferior */
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Seção Contato */
+  #contact {
+    padding: 20px 0; /* Reduz o padding */
+  }
+
+  #contact h2 {
+    margin-bottom: 10px; /* Reduz a margem */
+  }
+
+  #contact p {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+    margin-bottom: 5px;
+  }
+
+  #contact .social-icons {
+    margin-top: 10px; /* Reduz a margem */
+  }
+}

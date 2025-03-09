@@ -1,0 +1,44 @@
+@import "../variables.css"; /* Importa as variáveis de cor (ajuste o caminho se necessário) */
+
+/* Estilos específicos para o card de Conclusão */
+.recommendations-container {
+  /* Mantendo .recommendations-container, já existia no projeto-detalhes.css */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Layout de 3 colunas */
+  gap: 20px;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.recommendation-card {
+  /* Mantendo .recommendation-card, já existia no projeto-detalhes.css */
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recommendation-card h3 {
+  /* Mantendo .recommendation-card h3, já existia no projeto-detalhes.css */
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+
+/* Media Query específica para a seção de Conclusão (se precisar de ajustes responsivos específicos) */
+@media (max-width: 768px) {
+  .recommendations-container {
+    /* Mantendo .recommendations-container, já existia no projeto-detalhes-responsive.css */
+    grid-template-columns: 1fr; /* Layout de 1 coluna em telas menores */
+    gap: 10px;
+  }
+
+  .recommendation-card {
+    /* Mantendo .recommendation-card, já existia no projeto-detalhes-responsive.css */
+    padding: 15px;
+  }
+
+  .recommendation-card h3 {
+    /* Mantendo .recommendation-card h3, já existia no projeto-detalhes-responsive.css */
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}

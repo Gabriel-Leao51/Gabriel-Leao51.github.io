@@ -1,0 +1,105 @@
+@import "../variables.css"; /* Importa as variáveis de cor */
+
+/* Seção Habilidades */
+#skills {
+  padding: 40px 0;
+}
+
+#skills h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.skill {
+  background-color: var(--secondary-background-color);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill i {
+  font-size: 48px;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.skill img {
+  height: 48px;
+}
+
+.skill span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#web-dev-skills {
+  padding: 20px 0; /* Menos padding que a seção #skills principal */
+  margin-bottom: 20px;
+}
+
+#web-dev-skills h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Menor margem */
+  font-size: 1.3em; /* Menor fonte para o título */
+  font-weight: normal; /* Título menos destacado, peso normal */
+  color: var(--text-color);
+}
+
+.skills-row {
+  display: flex; /* Layout horizontal */
+  flex-direction: row;
+  justify-content: center; /* Centralizar horizontalmente */
+  gap: 15px; /* Menor espaçamento entre os cards */
+  flex-wrap: wrap; /* Quebrar para a próxima linha em telas pequenas */
+}
+
+.skill-small {
+  /* Estilos para os cards PEQUENOS de habilidades web */
+  background-color: var(
+    --background-color
+  ); /* Cor de fundo diferente, mais discreta */
+  padding: 10px; /* Menor padding */
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px; /* Largura fixa menor */
+  height: 80px; /* Altura fixa menor */
+}
+
+.skill-small:hover {
+  transform: translateY(-3px); /* Menos elevação no hover */
+}
+
+.skill-small i {
+  font-size: 30px; /* Menor tamanho do ícone */
+  color: var(--accent-color);
+  margin-bottom: 5px; /* Menor margem */
+}
+
+.skill-small img {
+  height: 30px; /* Menor altura para ícones SVG */
+}
+
+.skill-small span {
+  font-size: 12px; /* Menor tamanho do texto */
+  font-weight: normal; /* Peso da fonte normal, menos destacado */
+}
