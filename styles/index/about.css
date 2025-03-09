@@ -4,6 +4,7 @@
 #about {
   background-color: var(--secondary-background-color);
   padding: 40px 0;
+  margin-top: 10px;
 }
 
 #about h2 {
